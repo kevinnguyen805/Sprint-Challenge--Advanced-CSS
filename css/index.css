@@ -160,6 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F6F6F6;
+  font-family: #454A59;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.nav h1 {
+  font-size: 4.5rem;
+  margin: 15px 0;
+}
+.nav nav {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav nav a {
+  display: flex;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -220,4 +248,16 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.headingPhoto {
+  border-radius: 7px;
+}
+.btn {
+  background-color: #23293B;
+  color: #F6F6F6;
+  width: 90px;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px;
 }
