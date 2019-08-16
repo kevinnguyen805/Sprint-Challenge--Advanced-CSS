@@ -58,6 +58,7 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    border-bottom:1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -117,5 +118,71 @@
       }
     }
   }
-// home
 
+  .formSection{
+    max-width:800px;
+    margin:20px auto;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+
+    @media @phone{
+      width:100%;
+      flex-direction:column-reverse;
+    }
+    h2{
+      text-align:center;
+      margin:15px;
+      @media @phone{
+        font-size:4rem;
+      }
+    }
+    h5{
+      margin:10px;
+      text-align:center;
+      font-size:1.6rem;
+      line-height:1.5;
+    }
+
+    img{
+      border-radius:10px;
+      width:45%;
+      .mobileView();
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      width:55%;
+      @media @phone{
+        width:100%;
+      }
+
+      label{
+        font-size:2rem;
+      }
+
+      input,textarea{
+        width:50%;
+        margin:10px 0;
+        font-family:'Ubuntu', sans-serif;
+      }
+      
+      .submit{
+         .custom-btn(@btn-bg-color,@wild-sand,120px);
+
+        &:hover, &:active{
+        background-color:@wild-sand;
+        color:@btn-bg-color;
+        border:1px solid @btn-bg-color;
+        }
+
+        @media @phone{
+         width:100%;
+         padding:25px 8px;
+        }
+      }
+  }
+}
+// home
