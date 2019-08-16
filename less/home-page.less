@@ -3,7 +3,6 @@
 .home {
 
   .intro {
-
     h2 {
       padding: 15px;
     }
@@ -11,19 +10,36 @@
     p {
       padding:0 15px;
     }
-  
+    img{
+      border-radius:7px;
+      width:100%;
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      width:100%;
+      
+      .noShow{
+        display:none;
+      }
+      .show img{
+        display:flex;
+        width:100%;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      .mobileView();
+      }
     }
   }
 
@@ -42,12 +58,25 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    border-bottom:1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      width:100%;
+      padding:15px;
+      flex-direction:column-reverse;
+      align-content:center;
+      align-items:center;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+      width:100%;
+    }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +87,29 @@
       }
 
       .btn {
+        .custom-btn(@btn-bg-color,@wild-sand,90px);
+
+        &:hover, &:active{
+        background-color:@wild-sand;
+        color:@btn-bg-color;
+        border:1px solid @btn-bg-color;
+        }
+
+        @media @phone{
+         width:100%;
+         padding:25px 8px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+      width:100%;
+      margin:0 0 15px 0;
+    }
       
       img {
         width: 100%;
@@ -72,4 +118,71 @@
       }
     }
   }
-}// home
+
+  .formSection{
+    max-width:800px;
+    margin:20px auto;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+
+    @media @phone{
+      width:100%;
+      flex-direction:column-reverse;
+    }
+    h2{
+      text-align:center;
+      margin:15px;
+      @media @phone{
+        font-size:4rem;
+      }
+    }
+    h5{
+      margin:10px;
+      text-align:center;
+      font-size:1.6rem;
+      line-height:1.5;
+    }
+
+    img{
+      border-radius:10px;
+      width:45%;
+      .mobileView();
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      width:55%;
+      @media @phone{
+        width:100%;
+      }
+
+      label{
+        font-size:2rem;
+      }
+
+      input,textarea{
+        width:50%;
+        margin:10px 0;
+        font-family:'Ubuntu', sans-serif;
+      }
+      
+      .submit{
+         .custom-btn(@btn-bg-color,@wild-sand,120px);
+
+        &:hover, &:active{
+        background-color:@wild-sand;
+        color:@btn-bg-color;
+        border:1px solid @btn-bg-color;
+        }
+
+        @media @phone{
+         width:100%;
+         padding:25px 8px;
+        }
+      }
+  }
+}
+// home

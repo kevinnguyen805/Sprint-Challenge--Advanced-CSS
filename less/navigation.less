@@ -1,1 +1,35 @@
 // Navigation code here
+.border(){
+     border:1px solid red;
+}
+
+
+
+.nav{
+     max-width:1000px;
+     width:100%;
+     margin:0 auto;
+     background-color:@nav-bg;
+     font-family:@nav-font;
+     .navCenter();
+     flex-direction:column;
+     align-content:center;
+     .mobileView();
+
+     h1{
+          font-size:4.5rem;
+          margin:15px 0;
+     }
+     nav{
+          .navCenter();
+          width:420px;
+          justify-content:space-between;
+     } 
+     nav a{
+          font-size:1.6rem;
+          text-decoration:none;
+          color:black;
+          margin-bottom:10px;
+     }
+
+}

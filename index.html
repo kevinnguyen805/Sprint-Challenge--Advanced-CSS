@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <title>SpaceWalkers</title>
 
@@ -17,21 +19,32 @@
 <body>
 
  <!-- navigation code here -->
+  <section class="nav">
+    <h1>SpaceWalkers</h1>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Blog</a>
+      <a href="">Contact</a>
+      <a href="">Sign In</a>
+    </nav>
+  </section>
+
+
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
-
+      <img class="headingPhoto" src="file:///Users/admin/Git/Sprint-Challenge--Advanced-CSS/img/main-header.png" alt="Overview of Earth">
       <h2>Lift Off</h2>
-    
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="show" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img class="noShow" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="noShow" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -61,6 +74,29 @@
       </div>
 
     </section>
+    
+    <section class="formSection">
+      <img src="https://images.unsplash.com/photo-1519241678948-28f18681ce14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Rocketship ready for launch">
+    
+    <form class="form">
+    <h2>Subscribe Today</h2>
+    <h5>Want to keep up to date with the latest news in space expedition? Subscribe to our magazine and we'll give you the inside scoop on Elon Musk's hottest tweets (among other science stuff).</h3>
+
+    <label for="">Name:</label>
+    <input type="text" required placeholder="Elon Musk">
+
+    <label for="">Phone Number:</label>
+    <input type="text" required placeholder="(xxx)xxx-xxxx">
+
+    <label for="">Email:</label>
+    <input type="text" required placeholder="Your Email">
+
+    <textarea name="" id="" cols="10" rows="10" placeholder="Anything you'd like to see more of?"></textarea>
+
+    <input class="submit" type="Submit">
+  </form>
+
+  </section>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
