@@ -9,25 +9,25 @@
      max-width:1000px;
      width:100%;
      margin:0 auto;
-     text-align:center;
      background-color:@nav-bg;
      font-family:@nav-font;
-     display:flex;
+     .navCenter();
      flex-direction:column;
      align-content:center;
-     align-items:center;
+     @media @phone{
+          width:100%;
+     }
 
      h1{
           font-size:4.5rem;
           margin:15px 0;
      }
      nav{
+          .navCenter();
           width:420px;
-          display:flex;
           justify-content:space-between;
      } 
      nav a{
-          display:flex;
           font-size:1.6rem;
           text-decoration:none;
           color:black;

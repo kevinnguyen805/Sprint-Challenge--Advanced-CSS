@@ -1,13 +1,27 @@
 // Mixins Here
+.navCenter(){
+     display:flex;
+     align-items:center;
+}
+
+// .full(){
+//      @media @phone{
+//           width:100%;
+//      }
 
 // Parametric mixin for 'sign-up' button 
-.custom-btn(@button-bg, @font-color, @widthBtn){
+.custom-btn(@button-bg,@font-color,@widthBtn){
      background-color:@button-bg;
      color:@font-color;
      width:@widthBtn;
+     
      font-size:1.8rem;
      border-radius:5px;
      text-align:center;
      padding:12px;
 }
+// 
 
+.border(){
+     border: 1px solid red;
+}
