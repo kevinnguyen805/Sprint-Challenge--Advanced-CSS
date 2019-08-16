@@ -257,8 +257,22 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .walk {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+  }
+}
 .walk .walk-text {
   width: 50%;
+}
+@media (max-width:500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
 }
 .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -281,9 +295,21 @@ footer {
   color: #22283A;
   border: 1px solid #22283A;
 }
+@media (max-width:500px) {
+  .walk .walk-text .btn {
+    width: 100%;
+    padding: 25px 8px;
+  }
+}
 .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .walk .walk-img {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
 }
 .walk .walk-img img {
   width: 100%;
